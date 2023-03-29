@@ -19,6 +19,8 @@ object Dependencies {
         const val androidLibrary = "7.3.1"
         const val androidApplication = "7.3.1"
 
+        const val dagger = "2.45"
+
         object androidx {
             const val core = "1.7.0"
             const val appcompat = "1.6.1"
@@ -43,6 +45,9 @@ object Dependencies {
                 "androidx.constraintlayout:constraintlayout:${versions.androidx.constraintlayout}"
             const val splashscreen = "androidx.core:core-splashscreen:${versions.androidx.splashscreen}"
         }
+
+        const val dagger = "com.google.dagger:dagger:${versions.dagger}"
+        const val daggerCompiler = "com.google.dagger:dagger-compiler:${versions.dagger}"
     }
 
     object testLibraries {

@@ -1,6 +1,10 @@
+import Dependencies.libraries
+import Dependencies.testLibraries
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("org.jetbrains.kotlin.kapt")
 }
 
 android {
@@ -34,17 +38,19 @@ android {
 
 dependencies {
 
-    implementation(Dependencies.libraries.androidx.core)
-    implementation(Dependencies.libraries.androidx.appcompat)
-    implementation(Dependencies.libraries.androidx.design)
-    implementation(Dependencies.libraries.androidx.constraintlayout)
-    implementation(Dependencies.testLibraries.junit)
-    implementation(Dependencies.testLibraries.ext)
-    implementation(Dependencies.testLibraries.espresso)
+    implementation(libraries.androidx.core)
+    implementation(libraries.androidx.appcompat)
+    implementation(libraries.androidx.design)
+    implementation(libraries.androidx.constraintlayout)
+    implementation(testLibraries.junit)
+    implementation(testLibraries.ext)
+    implementation(testLibraries.espresso)
 
     //Splash API
-    implementation(Dependencies.libraries.androidx.splashscreen)
+    implementation(libraries.androidx.splashscreen)
+    implementation(project(":core"))
 
-//    //Dagger 2
-//    implementation ''
+    //Dagger 2
+    implementation(libraries.dagger)
+    kapt(libraries.daggerCompiler)
 }

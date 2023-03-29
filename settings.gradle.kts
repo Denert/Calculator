@@ -14,3 +14,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "CreditCalculator2"
 include(":app")
+include(":core")
