@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/hamburger"
+        android:icon="@drawable/ic_bottom_menu_hamburger"
+        android:title="Hamburger" />
+
+    <item
+        android:id="@+id/bank"
+        android:icon="@drawable/ic_bottom_menu_bank_2"
+        android:title="Bank" />
+
+    <item
+        android:id="@+id/percent"
+        android:icon="@drawable/ic_bottom_menu_percent"
+        android:title="Percent" />
+</menu>

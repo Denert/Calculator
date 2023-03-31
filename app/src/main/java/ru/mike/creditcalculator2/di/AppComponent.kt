@@ -6,12 +6,14 @@ import dagger.Component
 import ru.mike.core.AppComponentApi
 import ru.mike.creditcalculator2.MainActivity
 import ru.mike.creditcalculator2.di.modules.AndroidModule
+import ru.mike.creditcalculator2.di.modules.RouterModule
 import javax.inject.Singleton
 
-@Singleton
+@ApplicationSingleton
 @Component(
     modules = [
-        AndroidModule::class
+        AndroidModule::class,
+        RouterModule::class
     ]
 )
 interface AppComponent : AppComponentApi {
