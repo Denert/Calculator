@@ -9,6 +9,6 @@ interface MainRouter {
 
     fun applyContainer(@IdRes containerId: Int, fragmentManager: FragmentManager)
 
-    fun showScreen(screenClass: Class<BottomNavigationFragment>, creator: () -> Fragment)
+    fun showScreen(screenClass: Class<out BottomNavigationFragment>, creator: () -> BottomNavigationFragment)
 
 }

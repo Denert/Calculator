@@ -45,6 +45,7 @@ dependencies {
     implementation(libraries.androidx.appcompat)
     implementation(libraries.androidx.design)
     implementation(libraries.androidx.constraintlayout)
+    implementation(libraries.kotlinStd)
     implementation(testLibraries.junit)
     implementation(testLibraries.ext)
     implementation(testLibraries.espresso)
@@ -56,4 +57,7 @@ dependencies {
     //Dagger 2
     implementation(libraries.dagger)
     kapt(libraries.daggerCompiler)
+
+    //Input Mask
+    implementation(libraries.inputMask)
 }

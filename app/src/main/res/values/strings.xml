@@ -1,3 +1,33 @@
 <resources>
     <string name="app_name">CreditCalculator2</string>
+    <string name="credit_date">Дата кредита</string>
+    <string name="credit_type">Тип кредита</string>
+    <string name="credit_sum_of_credit">Сумма кредита</string>
+    <string name="credit_range">Срок кредита</string>
+    <string name="credit_percent">Процентная ставка</string>
+    <string name="credit_conditions">Дополнительные условия</string>
+    <string name="credit_commission">Комиссия</string>
+    <string name="credit_insurance">Страховка</string>
+    <string name="credit_early_repayment">Досрочное погашение</string>
+    <string name="credit_calculate">Рассчитать</string>
+    <string name="credit_annuity">Аннуитетный</string>
+    <string name="credit_differentiated">Дифференцированный</string>
+    <string name="credit_period">Период №</string>
+    <string name="credit_summ">Сумма</string>
+    <string name="credit_frequency">Частота выплат</string>
+    <string name="credit_cancel">Отмена</string>
+    <string name="credit_save">Сохранить</string>
+    <string name="credit_once">Разово</string>
+    <string name="credit_monthly">Ежемесячно</string>
+    <string name="credit_quarterly">Ежеквартально</string>
+    <string name="credit_annually">Ежегодно</string>
+    <string name="credit_repayment_type">Тип погашения</string>
+    <string name="credit_reduced_payment">С уменьшением платежа</string>
+    <string name="credit_reduced_term">С уменьшением срока</string>
+<!--    <string name="app_name">CreditCalculator2</string>-->
+<!--    <string name="app_name">CreditCalculator2</string>-->
+<!--    <string name="app_name">CreditCalculator2</string>-->
+<!--    <string name="app_name">CreditCalculator2</string>-->
+<!--    <string name="app_name">CreditCalculator2</string>-->
+<!--    <string name="app_name">CreditCalculator2</string>-->
 </resources>

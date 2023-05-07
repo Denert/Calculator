@@ -1,4 +1,6 @@
 package ru.mike.creditcalculator2.navigation
 
-interface BottomNavigationFragment {
-}
+import androidx.annotation.LayoutRes
+import androidx.fragment.app.Fragment
+
+open class BottomNavigationFragment : Fragment()

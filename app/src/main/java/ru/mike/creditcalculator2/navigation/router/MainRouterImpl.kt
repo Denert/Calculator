@@ -10,7 +10,7 @@ import javax.inject.Inject
 @ApplicationSingleton
 class MainRouterImpl @Inject constructor() : MainRouter {
 
-    private val bottomNavigationScreens: MutableSet<Fragment> = mutableSetOf()
+    private val bottomNavigationScreens: MutableSet<BottomNavigationFragment> = mutableSetOf()
 
     private var fragmentManager: FragmentManager? = null
     private var containerId: Int? = null
@@ -20,7 +20,7 @@ class MainRouterImpl @Inject constructor() : MainRouter {
         this.fragmentManager = fragmentManager
     }
 
-    override fun showScreen(screenClass: Class<BottomNavigationFragment>, creator: () -> Fragment) {
+    override fun showScreen(screenClass: Class<out BottomNavigationFragment>, creator: () -> BottomNavigationFragment) {
         val screen: Fragment = bottomNavigationScreens.find {
             it::class.java == screenClass
         } ?: creator.invoke()

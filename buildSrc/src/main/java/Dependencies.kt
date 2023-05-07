@@ -21,6 +21,8 @@ object Dependencies {
 
         const val dagger = "2.45"
 
+        const val inputMask = "6.0.0"
+
         object androidx {
             const val core = "1.7.0"
             const val appcompat = "1.6.1"
@@ -46,8 +48,12 @@ object Dependencies {
             const val splashscreen = "androidx.core:core-splashscreen:${versions.androidx.splashscreen}"
         }
 
+        const val kotlinStd = "org.jetbrains.kotlin:kotlin-stdlib:${versions.kotlin}"
+
         const val dagger = "com.google.dagger:dagger:${versions.dagger}"
         const val daggerCompiler = "com.google.dagger:dagger-compiler:${versions.dagger}"
+
+        const val inputMask = "com.redmadrobot:input-mask-android:${versions.inputMask}"
     }
 
     object testLibraries {

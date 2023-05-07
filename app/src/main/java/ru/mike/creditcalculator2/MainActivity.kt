@@ -27,10 +27,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         (appProvider.componentApi as AppComponent).inject(this)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        router.applyContainer(R.id.screenContainer, supportFragmentManager)
-        Thread.sleep(2000) //TODO: убрать, нужна для демонстрации сплеша
+        Thread.sleep(500) //TODO: убрать, нужна для демонстрации сплеша
         installSplashScreen()
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater, null, false)
+        router.applyContainer(R.id.screenContainer, supportFragmentManager)
+        bottomNavigationController.setupView(binding.navigation)
+        setContentView(binding.root)
     }
 }
